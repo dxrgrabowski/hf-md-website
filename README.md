@@ -1,11 +1,11 @@
 # About
 
-This is website made for scientific organization High Flyers.
+This is a website made for scientific organization High Flyers.
 The main goal was to develop a website which is easy to edit and to add new content.
 
 To make this possible, a dynamic routing with 'next.js' was used.
-New pages are made by adding markdown file which describes it.
-This automaticly creates new route for this page and makes it visible in navbar.
+New pages are made by adding a markdown file which describes it.
+This automatically creates a new route for this page and makes it visible in navbar.
 
 Also with this approach other pages were made. In this way administrator
 can just add new markdown file and one extra line in '.tsx' file to create more pages.
@@ -18,8 +18,8 @@ can just add new markdown file and one extra line in '.tsx' file to create more 
 
 ## Adding new blog post
 
-To add new blog post create markdown file in '\_posts' folder.
-Markdown file needs to start with a header which looks like this:
+To add new blog post, create markdown file in '\_posts' folder.
+The markdown file needs to start with a header which looks like this:
 
 ```markdown
 ---
@@ -35,22 +35,22 @@ ogImage:
 ---
 ```
 
-After this header, file is written like normal markdown with headers etc.
+After this header, the file is written like normal markdown with headers etc.
 
 ## Adding images
 
 All images have to be in 'public' folder. It is recommended,
 to create a folder with post name inside 'public/posts' folder to store images there.
-In this way it will be easier to navigate inside of the website project.
+In this way, it will be easier to navigate inside the website project.
 
-Images should be added inside markodwn in this way:
+Images should be added inside markdown in this way:
 
 ```markdown
 ![Cool image](/posts/lorem_ipsum/droniada2022.jpg "Cool image")
 ```
 
 Images which display at the top of the post and in its short form comes from header.
-Header needs to provide a path to this image and to author image (see the example).
+The header needs to provide a path to this image and to author image (see the example).
 
 ## Creating new site
 
@@ -64,7 +64,7 @@ a separate site available through navbar. This is done with these steps:
 ## Missing css in markdown
 
 Some features of markdown are not supported yet.
-You can notice it, when certain markdown element displatys just like normal div.
+You can notice it, when certain markdown element displays just like normal div.
 To add new css you need to find out to what html
 component given md component is translated to.
 You can do this using inspect tool in the browser. Then edit file 'components/markdown-styles.module.css'.
@@ -74,7 +74,7 @@ You should use 'tailwindcss' expressions to add new features.
 ## Deployment
 
 The easiest way is to use Vercel.
-In this way every changed pushed to 'main' branch of the project will be updated.
+In this way, every changed pushed to 'main' branch of the project will be updated.
 
 ## Running locally
 
